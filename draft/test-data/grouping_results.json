@@ -1,0 +1,1716 @@
+[
+    {
+        "Group": 1,
+        "Documents": [
+            {
+                "corporate_number": "3430001000060",
+                "representative_position": "代表取締役",
+                "representative_name": "青木",
+                "postal_code": "0010010",
+                "location": "北海道札幌市北区北十条西２丁目１３番地２",
+                "name": "青木鉱業株式会社",
+                "kana": "あおきこうぎょう",
+                "status": "-",
+                "employee_number": 32,
+                "qualification_grade": "C、C、C、",
+                "business_summary": "製造業",
+                "update_date": "2017-04-27T00:00:00+09:00",
+                "date_of_establishment": "1963-09-19"
+            },
+            {
+                "corporate_number": "3430001000060",
+                "representative_position": "代表取締役",
+                "representative_name": "青木　伸",
+                "postal_code": "0010010",
+                "location": "北海道札幌市北区北十条西２丁目１３番地２",
+                "name": "青木鉱業株式会社",
+                "kana": "あおきこうぎょう",
+                "status": "-",
+                "employee_number": 32,
+                "qualification_grade": "C、C、C、",
+                "business_summary": "砕石製造業",
+                "update_date": "2017-04-27T00:00:00+09:00",
+                "date_of_establishment": "1963-09-19"
+            },
+            {
+                "corporate_number": "3430001009176",
+                "representative_position": "代表取締役",
+                "representative_name": "大森　信治",
+                "postal_code": "0640914",
+                "location": "北海道札幌市中央区南十四条西１１丁目３番３号",
+                "name": "株式会社測機社",
+                "kana": "そっきしゃ",
+                "status": "-",
+                "qualification_grade": "、B、B、A",
+                "update_date": "2019-08-09T00:00:00+09:00",
+                "date_of_establishment": "1954-08-07"
+            }
+        ]
+    },
+    {
+        "Group": 2,
+        "Documents": [
+            {
+                "corporate_number": "3430001011644",
+                "representative_position": "代表取締役",
+                "representative_name": "浅野　昌子",
+                "postal_code": "0600004",
+                "location": "北海道札幌市中央区北四条西７丁目５緑苑木下ビル",
+                "name": "株式会社東友",
+                "kana": "とうゆう",
+                "status": "-",
+                "qualification_grade": "、D、D、",
+                "update_date": "2019-10-18T00:00:00+09:00",
+                "date_of_establishment": "1995-05-23"
+            },
+            {
+                "corporate_number": "3430001000143",
+                "representative_position": "代表取締役",
+                "representative_name": "濱田　浩二",
+                "postal_code": "0600062",
+                "location": "北海道札幌市中央区南二条西１２丁目３２４番地２４",
+                "name": "株式会社青写真商会",
+                "kana": "あおしゃしんしょうかい",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2022-06-08T00:00:00+09:00",
+                "date_of_establishment": "1976-03-25"
+            }
+        ]
+    },
+    {
+        "Group": 3,
+        "Documents": [
+            {
+                "corporate_number": "3430001000226",
+                "postal_code": "0600052",
+                "location": "北海道札幌市中央区南二条東２丁目７番地１",
+                "name": "株式会社アイネス",
+                "kana": "あいねす",
+                "status": "-",
+                "update_date": "2018-04-05T00:00:00+09:00"
+            },
+            {
+                "corporate_number": "3430001000341",
+                "postal_code": "0620031",
+                "location": "北海道札幌市豊平区西岡一条９丁目１番２５号",
+                "name": "株式会社アクアグレース",
+                "kana": "あくあぐれーす",
+                "status": "-",
+                "update_date": "2020-09-30T00:00:00+09:00"
+            },
+            {
+                "corporate_number": "3430001000432",
+                "postal_code": "0030837",
+                "location": "北海道札幌市白石区北郷七条４丁目３番１９号",
+                "name": "株式会社赤沼測量設計",
+                "kana": "あかぬまそくりょうせっけい",
+                "status": "-",
+                "update_date": "2020-08-05T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 4,
+        "Documents": [
+            {
+                "corporate_number": "3430001000399",
+                "postal_code": "0600002",
+                "location": "北海道札幌市中央区北二条西２丁目３４番地",
+                "name": "株式会社アクティブ",
+                "status": "-",
+                "update_date": "2015-10-30T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 5,
+        "Documents": [
+            {
+                "corporate_number": "3430001000647",
+                "representative_name": "代表取締役社長　菅野　範幸",
+                "postal_code": "0030027",
+                "location": "北海道札幌市白石区本通１９丁目北１番８６号",
+                "name": "東テク北海道株式会社",
+                "kana": "とうてくほっかいどう",
+                "status": "-",
+                "employee_number": 156,
+                "company_size_male": 124,
+                "company_size_female": 32,
+                "qualification_grade": "、B、B、",
+                "business_summary": "卸売業・建設業",
+                "update_date": "2019-12-26T00:00:00+09:00",
+                "date_of_establishment": "1970-03-23"
+            }
+        ]
+    },
+    {
+        "Group": 6,
+        "Documents": [
+            {
+                "corporate_number": "3430001000977",
+                "postal_code": "0070807",
+                "location": "北海道札幌市東区東苗穂七条３丁目４番７号",
+                "name": "天野工業株式会社",
+                "kana": "あまのこうぎょう",
+                "status": "-",
+                "update_date": "2019-03-13T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 7,
+        "Documents": [
+            {
+                "corporate_number": "3430001001109",
+                "representative_name": "代表取締役社長　堀江　岳人",
+                "postal_code": "0630829",
+                "location": "北海道札幌市西区発寒九条１４丁目５１６番３３６",
+                "name": "株式会社アルファ水工コンサルタンツ",
+                "kana": "あるふぁすいこうこんさるたんつ",
+                "status": "-",
+                "employee_number": 152,
+                "qualification_grade": "D、C、C、",
+                "business_summary": "建設コンサルタント",
+                "company_url": "http://www.ahec.jp/index.html",
+                "update_date": "2019-05-20T00:00:00+09:00",
+                "date_of_establishment": "1984-10-01"
+            }
+        ]
+    },
+    {
+        "Group": 8,
+        "Documents": [
+            {
+                "corporate_number": "3430001001158",
+                "representative_position": "代表取締役",
+                "representative_name": "松田　信介",
+                "postal_code": "0030026",
+                "location": "北海道札幌市白石区本通１７丁目南５番１５号",
+                "name": "アートシステム株式会社",
+                "kana": "あーとしすてむ",
+                "status": "-",
+                "employee_number": 34,
+                "qualification_grade": "、B、B、",
+                "business_summary": "ソフトウェア開発",
+                "update_date": "2019-03-25T00:00:00+09:00",
+                "date_of_establishment": "1996-01-16"
+            }
+        ]
+    },
+    {
+        "Group": 9,
+        "Documents": [
+            {
+                "corporate_number": "3430001001372",
+                "representative_position": "代表取締役",
+                "representative_name": "石田　一幸",
+                "postal_code": "0620934",
+                "location": "北海道札幌市豊平区平岸四条３丁目１番２４号",
+                "name": "株式会社イシダ",
+                "kana": "いしだ",
+                "status": "-",
+                "qualification_grade": "、C、C、B",
+                "update_date": "2019-04-11T00:00:00+09:00",
+                "date_of_establishment": "1973-05-19"
+            }
+        ]
+    },
+    {
+        "Group": 10,
+        "Documents": [
+            {
+                "corporate_number": "3430001001463",
+                "representative_position": "代表取締役",
+                "representative_name": "伊藤　真一",
+                "postal_code": "0070825",
+                "location": "北海道札幌市東区東雁来五条１丁目３番２８号",
+                "name": "株式会社伊藤機械製作所",
+                "kana": "いとうきかいせいさくしょ",
+                "status": "-",
+                "qualification_grade": "、D、D、",
+                "update_date": "2019-04-24T00:00:00+09:00",
+                "date_of_establishment": "1954-07-02"
+            }
+        ]
+    },
+    {
+        "Group": 11,
+        "Documents": [
+            {
+                "corporate_number": "3430001001694",
+                "postal_code": "0010930",
+                "location": "北海道札幌市北区新川６４５番地１",
+                "name": "伊吹運輸株式会社",
+                "kana": "いぶきうんゆ",
+                "status": "-",
+                "employee_number": 44,
+                "update_date": "2020-06-08T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 12,
+        "Documents": [
+            {
+                "corporate_number": "3430001002008",
+                "representative_position": "代表取締役",
+                "representative_name": "梅川　裕一",
+                "postal_code": "0600909",
+                "location": "北海道札幌市東区北九条東２丁目３番２５号",
+                "name": "株式会社梅川医科器械店",
+                "kana": "うめかわいかきかいてん",
+                "status": "-",
+                "employee_number": 17,
+                "qualification_grade": "、C、、",
+                "update_date": "2018-08-24T00:00:00+09:00",
+                "date_of_establishment": "1973-06-14"
+            }
+        ]
+    },
+    {
+        "Group": 13,
+        "Documents": [
+            {
+                "corporate_number": "3430001002148",
+                "representative_position": "代表取締役",
+                "representative_name": "佐藤　伸大",
+                "postal_code": "0070847",
+                "location": "北海道札幌市東区北四十七条東１丁目１番１０号",
+                "name": "株式会社栄商",
+                "kana": "えいしょう",
+                "status": "-",
+                "qualification_grade": "、C、C、B",
+                "update_date": "2018-05-16T00:00:00+09:00",
+                "date_of_establishment": "1974-08-09"
+            }
+        ]
+    },
+    {
+        "Group": 14,
+        "Documents": [
+            {
+                "corporate_number": "3430001002536",
+                "representative_position": "代表取締役",
+                "representative_name": "池田　利夫",
+                "postal_code": "0010923",
+                "location": "北海道札幌市北区新川三条１８丁目２番６号",
+                "name": "エヌ・エス株式会社",
+                "kana": "えぬえす",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-04-04T00:00:00+09:00",
+                "date_of_establishment": "1985-03-28"
+            }
+        ]
+    },
+    {
+        "Group": 15,
+        "Documents": [
+            {
+                "corporate_number": "3430001002635",
+                "representative_position": "代表取締役",
+                "representative_name": "千葉　兼久",
+                "postal_code": "0650027",
+                "location": "北海道札幌市東区北二十七条東２０丁目４番１号",
+                "name": "恵比寿システム株式会社",
+                "kana": "えびすしすてむ",
+                "status": "-",
+                "qualification_grade": "D、D、D、",
+                "update_date": "2021-10-27T00:00:00+09:00",
+                "date_of_establishment": "1994-08-01"
+            }
+        ]
+    },
+    {
+        "Group": 16,
+        "Documents": [
+            {
+                "corporate_number": "3430001002932",
+                "representative_name": "代表取締役　大島塗装店",
+                "postal_code": "0630823",
+                "location": "北海道札幌市西区発寒三条２丁目４番１８号",
+                "name": "株式会社大島塗装店",
+                "kana": "おおしまとそうてん",
+                "status": "-",
+                "employee_number": 13,
+                "qualification_grade": "、D、D、",
+                "business_summary": "塗装工事（建築・橋梁他）、建築工事、防水工事、アスベスト除去・封込込工事、土木工事",
+                "company_url": "http://ooshimatosouten.co.jp",
+                "update_date": "2018-05-16T00:00:00+09:00",
+                "date_of_establishment": "1967-02-14"
+            }
+        ]
+    },
+    {
+        "Group": 17,
+        "Documents": [
+            {
+                "corporate_number": "3430001003063",
+                "representative_position": "代表取締役",
+                "representative_name": "大沼　泰三",
+                "postal_code": "0030811",
+                "location": "北海道札幌市白石区菊水上町一条４丁目２０１番地",
+                "name": "株式会社大沼",
+                "kana": "おおぬま",
+                "status": "-",
+                "qualification_grade": "、C、C、A",
+                "update_date": "2019-04-04T00:00:00+09:00",
+                "date_of_establishment": "1958-04-16"
+            }
+        ]
+    },
+    {
+        "Group": 18,
+        "Documents": [
+            {
+                "corporate_number": "3430001003071",
+                "representative_position": "代表取締役",
+                "representative_name": "川村　陽子",
+                "postal_code": "0040053",
+                "location": "北海道札幌市厚別区厚別中央三条３丁目１４番３０号",
+                "name": "株式会社オービーディー",
+                "kana": "おーびーでぃー",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2020-12-07T00:00:00+09:00",
+                "date_of_establishment": "1980-06-06"
+            }
+        ]
+    },
+    {
+        "Group": 19,
+        "Documents": [
+            {
+                "corporate_number": "3430001003170",
+                "representative_position": "代表取締役",
+                "representative_name": "高橋　大",
+                "postal_code": "0640919",
+                "location": "北海道札幌市中央区南十九条西１５丁目３番１５号",
+                "name": "株式会社小笠原商会",
+                "kana": "おがさわらしょうかい",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2021-03-09T00:00:00+09:00",
+                "date_of_establishment": "1977-04-21"
+            },
+            {
+                "corporate_number": "3430001011322",
+                "representative_position": "代表取締役",
+                "representative_name": "美馬　尚泰",
+                "postal_code": "0600016",
+                "location": "北海道札幌市中央区北十六条西１６丁目１番２号",
+                "name": "道協建設株式会社",
+                "kana": "どうきょうけんせつ",
+                "status": "-",
+                "qualification_grade": "、、C、",
+                "update_date": "2018-06-13T00:00:00+09:00",
+                "date_of_establishment": "1968-01-26"
+            }
+        ]
+    },
+    {
+        "Group": 20,
+        "Documents": [
+            {
+                "corporate_number": "3430001003253",
+                "representative_position": "代表取締役",
+                "representative_name": "小川　祐司",
+                "postal_code": "0640952",
+                "location": "北海道札幌市中央区宮の森二条１３丁目６番１号",
+                "name": "株式会社小川",
+                "kana": "おがわ",
+                "status": "-",
+                "qualification_grade": "、C、、",
+                "update_date": "2021-11-10T00:00:00+09:00",
+                "date_of_establishment": "1956-01-25"
+            }
+        ]
+    },
+    {
+        "Group": 21,
+        "Documents": [
+            {
+                "corporate_number": "3430001003435",
+                "postal_code": "0600031",
+                "location": "北海道札幌市中央区北一条東９丁目１１番４６",
+                "name": "株式会社オリジナルＨＯＴＴａ",
+                "status": "-",
+                "employee_number": 5,
+                "update_date": "2015-10-30T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 22,
+        "Documents": [
+            {
+                "corporate_number": "3430001003575",
+                "representative_name": "代表取締役社長　松井　豊",
+                "postal_code": "0040839",
+                "location": "北海道札幌市清田区真栄３６３番２４",
+                "name": "株式会社化合物安全性研究所",
+                "kana": "かごうぶつあんぜんせいけんきゅうしょ",
+                "status": "-",
+                "employee_number": 102,
+                "company_size_male": 42,
+                "company_size_female": 60,
+                "qualification_grade": "、、C、",
+                "business_summary": "医薬品等の安全性試験受託業",
+                "company_url": "https://www.ka-anken.co.jp/",
+                "update_date": "2019-07-08T00:00:00+09:00",
+                "date_of_establishment": "1970-09-11"
+            }
+        ]
+    },
+    {
+        "Group": 23,
+        "Documents": [
+            {
+                "corporate_number": "3430001003641",
+                "postal_code": "0600004",
+                "location": "北海道札幌市中央区北四条西６丁目１番地１",
+                "name": "株式会社環境緑地研究所",
+                "kana": "かんきょうりょくちけんきゅうしょ",
+                "status": "-",
+                "update_date": "2018-04-24T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 24,
+        "Documents": [
+            {
+                "corporate_number": "3430001003773",
+                "representative_position": "代表取締役",
+                "representative_name": "神田　勝由",
+                "postal_code": "0650043",
+                "location": "北海道札幌市東区苗穂町１４丁目１番３２号",
+                "name": "株式会社神田建業",
+                "kana": "かんだけんぎょう",
+                "status": "-",
+                "qualification_grade": "D、D、D、C",
+                "update_date": "2018-10-24T00:00:00+09:00",
+                "date_of_establishment": "1975-03-18"
+            }
+        ]
+    },
+    {
+        "Group": 25,
+        "Documents": [
+            {
+                "corporate_number": "3430001003781",
+                "representative_name": "代表取締役社長　片桐　大",
+                "postal_code": "0600051",
+                "location": "北海道札幌市中央区南一条東７丁目２番地４",
+                "name": "片桐機械株式会社",
+                "kana": "かたぎりきかい",
+                "status": "-",
+                "employee_number": 239,
+                "company_size_male": 196,
+                "company_size_female": 43,
+                "qualification_grade": "、A、A、A",
+                "business_summary": "建築土木を中心とする建設機械器具および産業機械器具のレンタル・販売",
+                "company_url": "http://www.katagiri-g.com/katagiri/corporate/outline/",
+                "update_date": "2018-06-13T00:00:00+09:00",
+                "date_of_establishment": "1952-03-14"
+            }
+        ]
+    },
+    {
+        "Group": 26,
+        "Documents": [
+            {
+                "corporate_number": "3430001003815",
+                "representative_position": "代表取締役",
+                "representative_name": "寺崎　真",
+                "postal_code": "0630035",
+                "location": "北海道札幌市西区西野五条３丁目８番２６号",
+                "name": "株式会社ジオリサーチ",
+                "kana": "じおりさーち",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2019-06-07T00:00:00+09:00",
+                "date_of_establishment": "1972-09-18"
+            }
+        ]
+    },
+    {
+        "Group": 27,
+        "Documents": [
+            {
+                "corporate_number": "3430001004078",
+                "representative_name": "代表取締役　岸　洋希",
+                "postal_code": "0640953",
+                "location": "北海道札幌市中央区宮の森三条１０丁目６番１６－８０６号",
+                "name": "株式会社鷗プランニング",
+                "kana": "かもめぷらんにんぐ",
+                "status": "-",
+                "employee_number": 8,
+                "business_summary": "広告制作、各種印刷物の制作、ホームページの制作",
+                "company_url": "https://seagal.co.jp",
+                "update_date": "2022-12-27T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 28,
+        "Documents": [
+            {
+                "corporate_number": "3430001004160",
+                "postal_code": "0030022",
+                "location": "北海道札幌市白石区南郷通２０丁目南２番３６号",
+                "name": "苅田金属板工業株式会社",
+                "status": "-",
+                "update_date": "2015-10-30T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 29,
+        "Documents": [
+            {
+                "corporate_number": "3430001004177",
+                "postal_code": "0650041",
+                "location": "北海道札幌市東区本町一条８丁目１番２５号",
+                "name": "株式会社カワニシ商事",
+                "status": "-",
+                "update_date": "2015-10-30T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 30,
+        "Documents": [
+            {
+                "corporate_number": "3430001004276",
+                "representative_position": "代表取締役会長",
+                "representative_name": "青山　巖",
+                "postal_code": "0640921",
+                "location": "北海道札幌市中央区南二十一条西１０丁目２番１７号",
+                "name": "菊屋商事株式会社",
+                "kana": "きくやしょうじ",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-05-15T00:00:00+09:00",
+                "date_of_establishment": "1975-08-22"
+            }
+        ]
+    },
+    {
+        "Group": 31,
+        "Documents": [
+            {
+                "corporate_number": "3430001004334",
+                "representative_name": "代表取締役社長　田村健一",
+                "postal_code": "0070826",
+                "location": "北海道札幌市東区東雁来六条２丁目２番２５号",
+                "name": "北一ミート株式会社",
+                "kana": "きたいちみーと",
+                "status": "-",
+                "employee_number": 130,
+                "company_url": "https://www.kitaichimeat.com",
+                "update_date": "2019-05-08T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 32,
+        "Documents": [
+            {
+                "corporate_number": "3430001004714",
+                "representative_name": "代表取締役　山岡　強",
+                "postal_code": "0650022",
+                "location": "北海道札幌市東区北二十二条東１５丁目３番１号",
+                "name": "協友建設工業株式会社",
+                "kana": "きょうゆうけんせつこうぎょう",
+                "status": "-",
+                "employee_number": 14,
+                "company_size_male": 19,
+                "company_size_female": 2,
+                "business_summary": "土木建設業",
+                "update_date": "2018-05-02T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 33,
+        "Documents": [
+            {
+                "corporate_number": "3430001004788",
+                "postal_code": "0620938",
+                "location": "北海道札幌市豊平区平岸八条１３丁目２番２７号",
+                "name": "株式会社共立測量設計",
+                "kana": "きょうりつそくりょうせっけい",
+                "status": "-",
+                "employee_number": 13,
+                "company_size_male": 11,
+                "company_size_female": 2,
+                "update_date": "2019-11-01T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 34,
+        "Documents": [
+            {
+                "corporate_number": "3430001004904",
+                "representative_name": "代表取締役　桐越　慶",
+                "postal_code": "0070825",
+                "location": "北海道札幌市東区東雁来五条１丁目２番３０号",
+                "name": "株式会社桐越",
+                "kana": "きりこし",
+                "status": "-",
+                "employee_number": 140,
+                "qualification_grade": "、C、、",
+                "business_summary": "業務用青果物卸売業",
+                "update_date": "2020-03-11T00:00:00+09:00",
+                "date_of_establishment": "1977-04-01"
+            }
+        ]
+    },
+    {
+        "Group": 35,
+        "Documents": [
+            {
+                "corporate_number": "3430001004920",
+                "representative_position": "代表取締役",
+                "representative_name": "枡澤　英生",
+                "postal_code": "0640914",
+                "location": "北海道札幌市中央区南十四条西１５丁目２番２号",
+                "name": "空調機器管理株式会社",
+                "kana": "くうちょうききかんり",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2018-09-20T00:00:00+09:00",
+                "date_of_establishment": "1974-07-11"
+            }
+        ]
+    },
+    {
+        "Group": 36,
+        "Documents": [
+            {
+                "corporate_number": "3430001004961",
+                "representative_position": "代表取締役",
+                "representative_name": "國岡　智哉",
+                "postal_code": "0070805",
+                "location": "北海道札幌市東区東苗穂五条３丁目７番３９号",
+                "name": "国岡製麵株式会社",
+                "kana": "くにおかせいめん",
+                "status": "-",
+                "qualification_grade": "D、、、",
+                "update_date": "2019-01-18T00:00:00+09:00",
+                "date_of_establishment": "1952-12-23"
+            }
+        ]
+    },
+    {
+        "Group": 37,
+        "Documents": [
+            {
+                "corporate_number": "3430001005043",
+                "postal_code": "0620002",
+                "location": "北海道札幌市豊平区美園二条６丁目６３番地",
+                "name": "株式会社グリーンウツド（閉鎖）",
+                "status": "閉鎖",
+                "close_date": "2020-06-11",
+                "close_cause": "清算の結了等",
+                "update_date": "2020-06-15T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 38,
+        "Documents": [
+            {
+                "corporate_number": "3430001005209",
+                "representative_name": "代表取締役　　嘉屋　幸治",
+                "postal_code": "0040878",
+                "location": "北海道札幌市清田区平岡八条１丁目１３－２３",
+                "name": "株式会社蔵田喜芳園",
+                "kana": "くらたきほうえん",
+                "status": "-",
+                "employee_number": 6,
+                "business_summary": "造園、土木工事",
+                "update_date": "2021-03-03T00:00:00+09:00",
+                "founding_year": 1918
+            }
+        ]
+    },
+    {
+        "Group": 39,
+        "Documents": [
+            {
+                "corporate_number": "3430001005225",
+                "representative_position": "代表取締役",
+                "representative_name": "山本　千雅子",
+                "postal_code": "0600053",
+                "location": "北海道札幌市中央区南三条東１丁目４番地",
+                "name": "グラデュウス・マルチリンガルサービス株式会社",
+                "kana": "ぐらでゅうすまるちりんがるさーびす",
+                "status": "-",
+                "qualification_grade": "D、D、D、",
+                "update_date": "2023-01-13T00:00:00+09:00",
+                "date_of_establishment": "1990-01-11"
+            }
+        ]
+    },
+    {
+        "Group": 40,
+        "Documents": [
+            {
+                "corporate_number": "3430001005332",
+                "postal_code": "0030805",
+                "location": "北海道札幌市白石区菊水五条３丁目１番３０号",
+                "name": "株式会社ＣＳクリエイト",
+                "kana": "しーえすくりえいと",
+                "status": "-",
+                "update_date": "2020-07-02T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 41,
+        "Documents": [
+            {
+                "corporate_number": "3430001005605",
+                "representative_name": "代表取締役　千葉建次",
+                "postal_code": "0060818",
+                "location": "北海道札幌市手稲区前田八条１９丁目１番１０号",
+                "name": "光建工業株式会社",
+                "kana": "こうけんこうぎょう",
+                "status": "-",
+                "employee_number": 7,
+                "qualification_grade": "、C、C、",
+                "business_summary": "土木工事業",
+                "update_date": "2018-04-11T00:00:00+09:00",
+                "date_of_establishment": "1979-07-07"
+            }
+        ]
+    },
+    {
+        "Group": 42,
+        "Documents": [
+            {
+                "corporate_number": "3430001005737",
+                "representative_name": "代表取締役　佐々木養孝",
+                "postal_code": "0600004",
+                "location": "北海道札幌市中央区北四条西１２丁目１番地",
+                "name": "恒完工業株式会社",
+                "kana": "こうかんこうぎょう",
+                "status": "-",
+                "employee_number": 23,
+                "company_size_male": 15,
+                "company_size_female": 5,
+                "business_summary": "設備工事業",
+                "company_url": "http://kohkankogyo.co.jp",
+                "update_date": "2018-10-11T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 43,
+        "Documents": [
+            {
+                "corporate_number": "3430001006090",
+                "postal_code": "0640804",
+                "location": "北海道札幌市中央区南四条西６丁目８番地",
+                "name": "ＬＬＤアセットマネジメント株式会社",
+                "kana": "えるえるでぃあせっとまねじめんと",
+                "status": "-",
+                "update_date": "2018-04-03T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 44,
+        "Documents": [
+            {
+                "corporate_number": "3430001006207",
+                "postal_code": "0630812",
+                "location": "北海道札幌市西区琴似二条３丁目２番２４号",
+                "name": "株式会社琴似カードック",
+                "kana": "ことにかーどっく",
+                "status": "-",
+                "employee_number": 9,
+                "update_date": "2018-11-07T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 45,
+        "Documents": [
+            {
+                "corporate_number": "3430001006272",
+                "representative_name": "代表取締役社長　村上惠一郎",
+                "postal_code": "0630836",
+                "location": "北海道札幌市西区発寒十六条４丁目１番３０号",
+                "name": "コニシ工営株式会社",
+                "kana": "こにしこうえい",
+                "status": "-",
+                "employee_number": 30,
+                "company_size_male": 29,
+                "company_size_female": 1,
+                "business_summary": "防水及び改修工事",
+                "company_url": "http://konishikouei.co.jp/",
+                "update_date": "2018-12-14T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 46,
+        "Documents": [
+            {
+                "corporate_number": "3430001006330",
+                "representative_position": "代表取締役",
+                "representative_name": "小林　正志",
+                "postal_code": "0611405",
+                "location": "北海道恵庭市戸磯７６番地２６",
+                "name": "株式会社小林舞台システム",
+                "kana": "こばやしぶたいしすてむ",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-05-25T00:00:00+09:00",
+                "date_of_establishment": "1969-10-02"
+            }
+        ]
+    },
+    {
+        "Group": 47,
+        "Documents": [
+            {
+                "corporate_number": "3430001006826",
+                "representative_position": "代表取締役",
+                "representative_name": "青山　裕一",
+                "postal_code": "0630051",
+                "location": "北海道札幌市西区宮の沢一条３丁目９番１号",
+                "name": "札豆食品株式会社",
+                "kana": "さっとうしょくひん",
+                "status": "-",
+                "qualification_grade": "D、C、、",
+                "update_date": "2018-12-03T00:00:00+09:00",
+                "date_of_establishment": "1963-10-26"
+            }
+        ]
+    },
+    {
+        "Group": 48,
+        "Documents": [
+            {
+                "corporate_number": "3430001006982",
+                "representative_position": "代表取締役",
+                "representative_name": "菅井　潔",
+                "postal_code": "0030821",
+                "location": "北海道札幌市白石区菊水元町一条１丁目４番３４号",
+                "name": "株式会社シオン",
+                "kana": "しおん",
+                "status": "-",
+                "qualification_grade": "D、D、D、",
+                "update_date": "2019-03-13T00:00:00+09:00",
+                "date_of_establishment": "1960-11-07"
+            }
+        ]
+    },
+    {
+        "Group": 49,
+        "Documents": [
+            {
+                "corporate_number": "3430001007262",
+                "postal_code": "0640804",
+                "location": "北海道札幌市中央区南四条西２４丁目１番１号",
+                "name": "新工電気株式会社",
+                "kana": "しんこうでんき",
+                "status": "-",
+                "update_date": "2018-08-07T00:00:00+09:00"
+            },
+            {
+                "corporate_number": "3430001011710",
+                "postal_code": "0640914",
+                "location": "北海道札幌市中央区南十四条西１３丁目３番５号",
+                "name": "東立エンジニアリング株式会社",
+                "kana": "とうりつえんじにありんぐ",
+                "status": "-",
+                "update_date": "2018-10-26T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 50,
+        "Documents": [
+            {
+                "corporate_number": "3430001007295",
+                "representative_name": "代表取締役　重清　祐之",
+                "postal_code": "0030021",
+                "location": "北海道札幌市白石区栄通２丁目８番３０号",
+                "name": "株式会社シン技術コンサル",
+                "kana": "しんぎじゅつこんさる",
+                "status": "-",
+                "employee_number": 200,
+                "company_size_male": 133,
+                "company_size_female": 67,
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-09-21T00:00:00+09:00",
+                "date_of_establishment": "1958-04-24"
+            }
+        ]
+    },
+    {
+        "Group": 51,
+        "Documents": [
+            {
+                "corporate_number": "3430001007353",
+                "postal_code": "0030821",
+                "location": "北海道札幌市白石区菊水元町一条１丁目５番４号",
+                "name": "株式会社グランバース",
+                "kana": "ぐらんばーす",
+                "status": "-",
+                "update_date": "2022-02-02T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 52,
+        "Documents": [
+            {
+                "corporate_number": "3430001007428",
+                "representative_position": "代表取締役",
+                "representative_name": "鳴海　鼓大",
+                "postal_code": "0650015",
+                "location": "北海道札幌市東区北十五条東１丁目２番２４号",
+                "name": "株式会社システム・ケイ",
+                "kana": "しすてむけい",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-07-11T00:00:00+09:00",
+                "date_of_establishment": "1991-02-25"
+            }
+        ]
+    },
+    {
+        "Group": 53,
+        "Documents": [
+            {
+                "corporate_number": "3430001007444",
+                "representative_position": "代表取締役",
+                "representative_name": "久保　利人",
+                "postal_code": "0600061",
+                "location": "北海道札幌市中央区南一条西１０丁目１番２",
+                "name": "システムデザイン開発株式会社",
+                "kana": "しすてむでざいんかいはつ",
+                "status": "-",
+                "qualification_grade": "、D、D、",
+                "update_date": "2019-11-13T00:00:00+09:00",
+                "date_of_establishment": "1985-08-01"
+            }
+        ]
+    },
+    {
+        "Group": 54,
+        "Documents": [
+            {
+                "corporate_number": "3430001007452",
+                "representative_name": "代表取締役　屋代敦男",
+                "postal_code": "0600042",
+                "location": "北海道札幌市中央区大通西８丁目２番地",
+                "name": "システムバンク株式会社",
+                "kana": "しすてむばんく",
+                "status": "-",
+                "employee_number": 50,
+                "qualification_grade": "、C、C、",
+                "business_summary": "コンピュータシステムの開発及び販売\n各種パッケージソフトウェアの開発及び販売\nコンピュータ導入に関するコンサルティング",
+                "company_url": "http://www.sbn.co.jp",
+                "update_date": "2019-11-07T00:00:00+09:00",
+                "date_of_establishment": "1984-08-23",
+                "founding_year": 1984
+            }
+        ]
+    },
+    {
+        "Group": 55,
+        "Documents": [
+            {
+                "corporate_number": "3430001007469",
+                "representative_position": "代表取締役",
+                "representative_name": "大内　利章",
+                "postal_code": "0600042",
+                "location": "北海道札幌市中央区大通西１丁目１４番地２",
+                "name": "株式会社自然農園",
+                "kana": "しぜんのうえん",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-06-01T00:00:00+09:00",
+                "date_of_establishment": "1985-04-11"
+            }
+        ]
+    },
+    {
+        "Group": 56,
+        "Documents": [
+            {
+                "corporate_number": "3430001008194",
+                "representative_position": "代表取締役",
+                "representative_name": "石田　誠",
+                "postal_code": "0640928",
+                "location": "北海道札幌市中央区南二十八条西１２丁目２番１１号",
+                "name": "株式会社真和サービス",
+                "kana": "しんわさーびす",
+                "status": "-",
+                "qualification_grade": "、、C、",
+                "update_date": "2015-10-30T00:00:00+09:00",
+                "date_of_establishment": "1989-04-15"
+            }
+        ]
+    },
+    {
+        "Group": 57,
+        "Documents": [
+            {
+                "corporate_number": "3430001008384",
+                "representative_name": "代表取締役　鈴木　計",
+                "postal_code": "0613241",
+                "location": "北海道石狩市新港西１丁目７２５番地４",
+                "name": "株式会社鈴木総合食品",
+                "kana": "すずきそうごうしょくひん",
+                "status": "-",
+                "employee_number": 35,
+                "business_summary": "食品・総菜の製造・加工および販売",
+                "update_date": "2019-06-11T00:00:00+09:00",
+                "founding_year": 1982
+            }
+        ]
+    },
+    {
+        "Group": 58,
+        "Documents": [
+            {
+                "corporate_number": "3430001008608",
+                "representative_position": "代表取締役",
+                "representative_name": "菅沼　武",
+                "postal_code": "0600033",
+                "location": "北海道札幌市中央区北三条東７丁目３４２番",
+                "name": "株式会社青工",
+                "kana": "せいこう",
+                "status": "-",
+                "qualification_grade": "C、C、C、",
+                "update_date": "2020-11-16T00:00:00+09:00",
+                "date_of_establishment": "1975-03-25"
+            }
+        ]
+    },
+    {
+        "Group": 59,
+        "Documents": [
+            {
+                "corporate_number": "3430001008780",
+                "representative_name": "代表取締役　関　　浩一",
+                "postal_code": "0613241",
+                "location": "北海道石狩市新港西３丁目７０２番地６",
+                "name": "関工業株式会社",
+                "kana": "せきこうぎょう",
+                "status": "-",
+                "employee_number": 34,
+                "business_summary": "建機のアタッチメントの製造",
+                "update_date": "2018-07-26T00:00:00+09:00",
+                "founding_year": 1974
+            }
+        ]
+    },
+    {
+        "Group": 60,
+        "Documents": [
+            {
+                "corporate_number": "3430001008822",
+                "postal_code": "0030828",
+                "location": "北海道札幌市白石区菊水元町八条１丁目６番７号",
+                "name": "積和建設札幌株式会社（閉鎖）",
+                "kana": "せきわけんせつさっぽろ",
+                "status": "閉鎖",
+                "close_date": "2023-04-19",
+                "close_cause": "合併による解散等",
+                "update_date": "2023-04-25T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 61,
+        "Documents": [
+            {
+                "corporate_number": "3430001009325",
+                "postal_code": "0600006",
+                "location": "北海道札幌市中央区北六条西１６丁目１番地",
+                "name": "株式会社大学農園",
+                "kana": "だいがくのうえん",
+                "status": "-",
+                "update_date": "2022-07-15T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 62,
+        "Documents": [
+            {
+                "corporate_number": "3430001009465",
+                "representative_position": "代表取締役",
+                "representative_name": "館脇　元",
+                "postal_code": "0650032",
+                "location": "北海道札幌市東区北三十二条東１丁目３番１５号",
+                "name": "大東通工株式会社",
+                "kana": "だいとうつうこう",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2015-10-30T00:00:00+09:00",
+                "date_of_establishment": "1969-01-31"
+            }
+        ]
+    },
+    {
+        "Group": 63,
+        "Documents": [
+            {
+                "corporate_number": "3430001009614",
+                "postal_code": "0030013",
+                "location": "北海道札幌市白石区中央三条３丁目６番３３号",
+                "name": "株式会社タイムリー",
+                "kana": "たいむりー",
+                "status": "-",
+                "update_date": "2019-07-02T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 64,
+        "Documents": [
+            {
+                "corporate_number": "3430001009738",
+                "representative_name": "代表取締役　東原　和年",
+                "postal_code": "0600061",
+                "location": "北海道札幌市中央区南一条西４丁目４番地１",
+                "name": "株式会社太陽流通",
+                "kana": "たいようりゅうつう",
+                "status": "-",
+                "employee_number": 175,
+                "company_size_male": 117,
+                "company_size_female": 62,
+                "business_summary": "パチンコホールの経営等",
+                "update_date": "2021-03-02T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 65,
+        "Documents": [
+            {
+                "corporate_number": "3430001009820",
+                "postal_code": "0600004",
+                "location": "北海道札幌市中央区北四条西６丁目１番地の３",
+                "name": "株式会社高岡建築設計事務所",
+                "kana": "たかおかけんちくせっけいじむしょ",
+                "status": "-",
+                "update_date": "2021-11-01T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 66,
+        "Documents": [
+            {
+                "corporate_number": "3430001009960",
+                "postal_code": "0030875",
+                "location": "北海道札幌市白石区米里五条２丁目１番２０号",
+                "name": "滝沢電気設備株式会社",
+                "kana": "たきざわでんきせつび",
+                "status": "-",
+                "update_date": "2019-06-25T00:00:00+09:00"
+            },
+            {
+                "corporate_number": "3430001000432",
+                "postal_code": "0030837",
+                "location": "北海道札幌市白石区北郷七条４丁目３番１９号",
+                "name": "株式会社赤沼測量設計",
+                "kana": "あかぬまそくりょうせっけい",
+                "status": "-",
+                "update_date": "2020-08-05T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 67,
+        "Documents": [
+            {
+                "corporate_number": "3430001010217",
+                "representative_name": "代表取締役　佐脇　由宏",
+                "postal_code": "0600063",
+                "location": "北海道札幌市中央区南三条西５丁目１番１",
+                "name": "ダットジャパン株式会社",
+                "kana": "だっとじゃぱん",
+                "status": "-",
+                "employee_number": 320,
+                "company_size_male": 135,
+                "company_size_female": 199,
+                "qualification_grade": "、、C、",
+                "business_summary": "ソフトウェア開発・販売、電話等通信手段を用いたコールセンターの構築及び運営サービス",
+                "company_url": "http://www.datt.co.jp/",
+                "update_date": "2020-05-20T00:00:00+09:00",
+                "date_of_establishment": "1986-04-02"
+            }
+        ]
+    },
+    {
+        "Group": 68,
+        "Documents": [
+            {
+                "corporate_number": "3430001010308",
+                "representative_position": "代表取締役",
+                "representative_name": "田邊　巨樹",
+                "postal_code": "0650019",
+                "location": "北海道札幌市東区北十九条東８丁目５番１１号",
+                "name": "株式会社田辺構造設計",
+                "kana": "たなべこうぞうせっけい",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2018-05-30T00:00:00+09:00",
+                "date_of_establishment": "1988-06-20"
+            }
+        ]
+    },
+    {
+        "Group": 69,
+        "Documents": [
+            {
+                "corporate_number": "3430001010638",
+                "representative_position": "代表取締役",
+                "representative_name": "土谷　敏行",
+                "postal_code": "0650042",
+                "location": "北海道札幌市東区本町二条１０丁目２番３５号",
+                "name": "株式会社土谷製作所",
+                "kana": "つちやせいさくしょ",
+                "status": "-",
+                "qualification_grade": "C、、、",
+                "update_date": "2018-06-13T00:00:00+09:00",
+                "date_of_establishment": "1961-01-07"
+            }
+        ]
+    },
+    {
+        "Group": 70,
+        "Documents": [
+            {
+                "corporate_number": "3430001010729",
+                "representative_position": "代表取締役",
+                "representative_name": "奥山　敦子",
+                "postal_code": "0010034",
+                "location": "北海道札幌市北区北三十四条西５丁目２番１５号",
+                "name": "株式会社ティ・エス・エス",
+                "kana": "てぃえすえす",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-11-26T00:00:00+09:00",
+                "date_of_establishment": "1981-11-09"
+            }
+        ]
+    },
+    {
+        "Group": 71,
+        "Documents": [
+            {
+                "corporate_number": "3430001010811",
+                "postal_code": "0030833",
+                "location": "北海道札幌市白石区北郷三条３丁目２番２８号",
+                "name": "株式会社ティスリー",
+                "kana": "てぃすりー",
+                "status": "-",
+                "update_date": "2020-09-25T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 72,
+        "Documents": [
+            {
+                "corporate_number": "3430001010902",
+                "representative_name": "代表取締役　上田　英樹",
+                "postal_code": "0040015",
+                "location": "北海道札幌市厚別区下野幌テクノパーク１丁目１番１０号",
+                "name": "株式会社テクノラボ",
+                "kana": "てくのらぼ",
+                "status": "-",
+                "employee_number": 113,
+                "company_size_male": 93,
+                "company_size_female": 18,
+                "business_summary": "ソフトウェア開発",
+                "company_url": "http://www.techno-labo.co.jp",
+                "update_date": "2018-06-13T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 73,
+        "Documents": [
+            {
+                "corporate_number": "3430001011074",
+                "postal_code": "0010034",
+                "location": "北海道札幌市北区北三十四条西４丁目１番１１号",
+                "name": "株式会社トーア",
+                "kana": "とーあ",
+                "status": "-",
+                "employee_number": 330,
+                "update_date": "2018-05-15T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 74,
+        "Documents": [
+            {
+                "corporate_number": "3430001011108",
+                "representative_position": "代表取締役",
+                "representative_name": "吉田　仁",
+                "postal_code": "0600001",
+                "location": "北海道札幌市中央区北一条西１５丁目１番地３",
+                "name": "株式会社道央鑑定",
+                "kana": "どうおうかんてい",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2018-05-10T00:00:00+09:00",
+                "date_of_establishment": "1989-07-01"
+            }
+        ]
+    },
+    {
+        "Group": 75,
+        "Documents": [
+            {
+                "corporate_number": "3430001011396",
+                "representative_position": "代表取締役",
+                "representative_name": "五十嵐　正剛",
+                "postal_code": "0600042",
+                "location": "北海道札幌市中央区大通西１８丁目１番３０号",
+                "name": "株式会社道新サービスセンター",
+                "kana": "どうしんさーびすせんたー",
+                "status": "-",
+                "employee_number": 100,
+                "qualification_grade": "B、A、A、",
+                "update_date": "2018-04-12T00:00:00+09:00",
+                "date_of_establishment": "1962-08-06"
+            }
+        ]
+    },
+    {
+        "Group": 76,
+        "Documents": [
+            {
+                "corporate_number": "3430001011421",
+                "representative_position": "代表取締役",
+                "representative_name": "鎌田　紘昭",
+                "postal_code": "0010020",
+                "location": "北海道札幌市北区北二十条西４丁目２番２号",
+                "name": "株式会社東伸ビル管理",
+                "kana": "とうしんびるかんり",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2018-10-15T00:00:00+09:00",
+                "date_of_establishment": "1982-10-12"
+            }
+        ]
+    },
+    {
+        "Group": 77,
+        "Documents": [
+            {
+                "corporate_number": "3430001011611",
+                "representative_position": "代表取締役",
+                "representative_name": "青山　裕亮",
+                "postal_code": "0620003",
+                "location": "北海道札幌市豊平区美園三条７丁目１番２２号",
+                "name": "東北土建株式会社",
+                "kana": "とうほくどけん",
+                "status": "-",
+                "qualification_grade": "、C、C、B",
+                "update_date": "2019-04-03T00:00:00+09:00",
+                "date_of_establishment": "1968-01-26"
+            }
+        ]
+    },
+    {
+        "Group": 78,
+        "Documents": [
+            {
+                "corporate_number": "3430001011652",
+                "representative_position": "代表取締役",
+                "representative_name": "澤田　満",
+                "postal_code": "0030802",
+                "location": "北海道札幌市白石区菊水二条３丁目１番３４号",
+                "name": "東陽上村アドバンス株式会社",
+                "kana": "とうよううえむらあどばんす",
+                "status": "-",
+                "qualification_grade": "C、B、B、",
+                "update_date": "2019-01-18T00:00:00+09:00",
+                "date_of_establishment": "1952-03-11"
+            }
+        ]
+    },
+    {
+        "Group": 79,
+        "Documents": [
+            {
+                "corporate_number": "3430001011826",
+                "representative_position": "代表取締役",
+                "representative_name": "寺下　徹",
+                "postal_code": "0630061",
+                "location": "北海道札幌市西区西町北７丁目４番７号",
+                "name": "株式会社図書館ネットワークサービス",
+                "kana": "としょかんねっとわーくさーびす",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2018-06-12T00:00:00+09:00",
+                "date_of_establishment": "1989-07-27"
+            }
+        ]
+    },
+    {
+        "Group": 80,
+        "Documents": [
+            {
+                "corporate_number": "3430001011891",
+                "postal_code": "0010023",
+                "location": "北海道札幌市北区北二十三条西４丁目１番１７号",
+                "name": "富井建設株式会社",
+                "kana": "とみいけんせつ",
+                "status": "-",
+                "update_date": "2019-01-31T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 81,
+        "Documents": [
+            {
+                "corporate_number": "3430001012064",
+                "postal_code": "0620001",
+                "location": "北海道札幌市豊平区美園一条２丁目１番２０号",
+                "name": "株式会社南華園",
+                "kana": "なんかえん",
+                "status": "-",
+                "update_date": "2019-12-26T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 82,
+        "Documents": [
+            {
+                "corporate_number": "3430001012097",
+                "representative_name": "代表取締役　高木　邦雄",
+                "postal_code": "0010908",
+                "location": "北海道札幌市北区新琴似八条２丁目１番１７号",
+                "name": "株式会社ナカ建工",
+                "kana": "なかけんこう",
+                "status": "-",
+                "employee_number": 14,
+                "update_date": "2019-01-08T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 83,
+        "Documents": [
+            {
+                "corporate_number": "3430001012295",
+                "representative_name": "代表取締役社長　今田　雅史",
+                "postal_code": "0030030",
+                "location": "北海道札幌市白石区流通センター１丁目８番１号",
+                "name": "株式会社ナニワ",
+                "kana": "なにわ",
+                "status": "-",
+                "employee_number": 127,
+                "company_size_male": 91,
+                "company_size_female": 53,
+                "business_summary": "●レジャー・スポーツ用品、住宅設備機器、日用品等の卸売業\n●オリジナル商品の企画、開発事業",
+                "company_url": "http://www.e-naniwa.co.jp/",
+                "update_date": "2018-11-28T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 84,
+        "Documents": [
+            {
+                "corporate_number": "3430001012353",
+                "representative_position": "代表取締役",
+                "representative_name": "新津　良昌",
+                "postal_code": "0070843",
+                "location": "北海道札幌市東区北四十三条東７丁目３番１６号",
+                "name": "株式会社新津写真",
+                "kana": "にいづしゃしん",
+                "status": "-",
+                "qualification_grade": "、、D、",
+                "update_date": "2020-07-31T00:00:00+09:00",
+                "date_of_establishment": "1979-07-02"
+            }
+        ]
+    },
+    {
+        "Group": 85,
+        "Documents": [
+            {
+                "corporate_number": "3430001012452",
+                "postal_code": "0620034",
+                "location": "北海道札幌市豊平区西岡四条１丁目１３番５０号",
+                "name": "トヨタ部品北海道共販株式会社（閉鎖）",
+                "kana": "とよたぶひんほっかいどうきょうはん",
+                "status": "閉鎖",
+                "close_date": "2020-07-17",
+                "close_cause": "合併による解散等",
+                "update_date": "2020-07-29T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 86,
+        "Documents": [
+            {
+                "corporate_number": "3430001012519",
+                "representative_position": "代表取締役",
+                "representative_name": "西山　隆司",
+                "postal_code": "0030028",
+                "location": "北海道札幌市白石区平和通１６丁目南１番１号",
+                "name": "西山製麺株式会社",
+                "kana": "にしやませいめん",
+                "status": "-",
+                "qualification_grade": "B、B、、",
+                "update_date": "2022-05-24T00:00:00+09:00",
+                "date_of_establishment": "1985-12-21"
+            }
+        ]
+    },
+    {
+        "Group": 87,
+        "Documents": [
+            {
+                "corporate_number": "3430001012551",
+                "representative_position": "代表取締役",
+                "representative_name": "星川　和久",
+                "postal_code": "0620052",
+                "location": "北海道札幌市豊平区月寒東二条１８丁目１２番３号",
+                "name": "株式会社にっかん",
+                "kana": "にっかん",
+                "status": "-",
+                "qualification_grade": "、C、C、",
+                "update_date": "2019-01-25T00:00:00+09:00",
+                "date_of_establishment": "1974-05-07"
+            }
+        ]
+    },
+    {
+        "Group": 88,
+        "Documents": [
+            {
+                "corporate_number": "3430001012618",
+                "postal_code": "0600033",
+                "location": "北海道札幌市中央区北三条東３丁目１－３０",
+                "name": "株式会社北海道日刊スポーツ新聞社",
+                "kana": "ほっかいどうにっかんすぽーつしんぶんしゃ",
+                "status": "-",
+                "update_date": "2019-07-19T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 89,
+        "Documents": [
+            {
+                "corporate_number": "3430001012642",
+                "postal_code": "0030826",
+                "location": "北海道札幌市白石区菊水元町六条３丁目４番１３号",
+                "name": "株式会社日宣",
+                "kana": "にっせん",
+                "status": "-",
+                "update_date": "2022-06-07T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 90,
+        "Documents": [
+            {
+                "corporate_number": "3430001012659",
+                "representative_position": "代表取締役",
+                "representative_name": "齋藤　清克",
+                "postal_code": "0600032",
+                "location": "北海道札幌市中央区北二条東１１丁目２３番地",
+                "name": "日精機工株式会社",
+                "kana": "にっせいきこう",
+                "status": "-",
+                "qualification_grade": "、B、、",
+                "update_date": "2022-09-16T00:00:00+09:00",
+                "date_of_establishment": "1971-07-02"
+            }
+        ]
+    },
+    {
+        "Group": 91,
+        "Documents": [
+            {
+                "corporate_number": "3430001012725",
+                "representative_position": "代表取締役",
+                "representative_name": "山本　稔人",
+                "postal_code": "0030805",
+                "location": "北海道札幌市白石区菊水五条３丁目８７番地",
+                "name": "日進堂印刷株式会社",
+                "kana": "にっしんどういんさつ",
+                "status": "-",
+                "qualification_grade": "、C、、",
+                "update_date": "2019-01-17T00:00:00+09:00",
+                "date_of_establishment": "1976-02-27"
+            }
+        ]
+    },
+    {
+        "Group": 92,
+        "Documents": [
+            {
+                "corporate_number": "3430001012741",
+                "representative_position": "代表取締役",
+                "representative_name": "竹田　貴彦",
+                "postal_code": "0630836",
+                "location": "北海道札幌市西区発寒十六条２丁目３番１号",
+                "name": "日産部品北海道販売株式会社",
+                "kana": "にっさんぶひんほっかいどうはんばい",
+                "status": "-",
+                "qualification_grade": "、A、、",
+                "update_date": "2018-05-11T00:00:00+09:00",
+                "date_of_establishment": "1988-04-05"
+            }
+        ]
+    },
+    {
+        "Group": 93,
+        "Documents": [
+            {
+                "corporate_number": "3430001012915",
+                "postal_code": "0630061",
+                "location": "北海道札幌市西区西町北１８丁目１番１号",
+                "name": "マルハニチロ畜産株式会社",
+                "kana": "まるはにちろちくさん",
+                "status": "-",
+                "employee_number": 496,
+                "update_date": "2022-04-06T00:00:00+09:00"
+            }
+        ]
+    },
+    {
+        "Group": 94,
+        "Documents": [
+            {
+                "corporate_number": "3430001013599",
+                "postal_code": "0650043",
+                "location": "北海道札幌市東区苗穂町４丁目４番７号",
+                "name": "株式会社ハマヤ薬局",
+                "kana": "はまややっきょく",
+                "status": "-",
+                "update_date": "2021-10-08T00:00:00+09:00"
+            }
+        ]
+    }
+]
