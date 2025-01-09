@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+psycopg2-binary
+pydantic
+python-multipart
+asyncpg
+datasketch
+google-auth
+requests

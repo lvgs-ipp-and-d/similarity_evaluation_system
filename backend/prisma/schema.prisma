@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Vectors {
+  id            Int @id @default(autoincrement())
+  vector_data   Unsupported("vector(128)")
+  metadata  Metadata[]
+}
+
+model Metadata {
+  id        Int @id @default(autoincrement())
+  vector_id Int
+  Metadata  Json
+
+  // リレーション定義
+  vectors Vectors @relation(fields: [vector_id], references: [id])
+}
+
+model Groups {
+  id            Int @id @default(autoincrement())
+  division_name String
+  group_name    String
+  group_data    Json
+}
