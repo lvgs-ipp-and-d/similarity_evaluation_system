@@ -7,3 +7,8 @@ asyncpg
 datasketch
 google-auth
 requests
+python-dotenv
+uvicorn[standard]==0.23.2
+celery==5.3.4
+redis==5.0.0
+minhash==0.1.1

@@ -36,7 +36,7 @@ export default function AuthPage() {
             const userInfo = data.user_info;
 
             // 認証成功時に/homeにリダイレクト
-            navigate("/home",
+            navigate("/SignIn",
                 {
                     state: {
                         user_name: userInfo.name,

@@ -1,49 +1,24 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaHome, FaChevronDown, FaChevronRight, FaLayerGroup } from "react-icons/fa";
+import { FaBars, FaTimes, FaHome, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
+import { FaLayerGroup } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
-import { IoSearchSharp } from "react-icons/io5";
-import { HiMiniRectangleGroup } from "react-icons/hi2";
+import { IoIosArrowForward } from "react-icons/io";
 
-export default function Home() {
+interface ErrorDetail {
+    detail?: string; // サーバーエラーのメッセージが格納されるプロパティ
+}
+
+export default function SearchSelect() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [expandedMenu, setExpandedMenu] = useState(null);
     const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+    const [groupList, setGroupList] = useState<{ id: number; name: string }[]>([]);
     const location = useLocation();
     const { user_name = "未設定", user_email = "未設定" } = location.state || {};
-
-    useEffect(() => {
-        console.log("受け取ったstate:", location.state);
-    }, [location.state]);
-
     const navigate = useNavigate();
-
-    const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
-
-    const toggleSubMenu = (menu) => {
-        setExpandedMenu(expandedMenu === menu ? null : menu);
-    };
-
-    const toggleProfileMenu = () => {
-        setIsProfileMenuOpen(!isProfileMenuOpen);
-    };
-
-    const handleGroupingButtonClick = () => {
-        navigate("/group/select", 
-            {
-                state: {
-                    user_name: user_name,
-                    user_email: user_email
-                }
-            }
-        );
-    };
-
-    const [groupList, setGroupList] = useState<{ id: number; name: string }[]>([]);
-
-    const groupCount = groupList.length;
 
     // グループリスト取得処理
     const fetchGroups = async () => {
@@ -67,35 +42,54 @@ export default function Home() {
             setGroupList([]); // エラー時も空リストをセット
         }
     };
+    
 
     // 初回レンダリング時にグループリストを取得
     useEffect(() => {
         fetchGroups();
     }, []);
 
-    // ログアウト処理
-    const handleLogout = async () => {
-        // ローカルストレージからトークンを削除
-        localStorage.removeItem("token");
+    const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
+    const toggleSubMenu = (menu) => setExpandedMenu(expandedMenu === menu ? null : menu);
+    const toggleProfileMenu = () => setIsProfileMenuOpen(!isProfileMenuOpen);
+    const handleHomeButtonClick = () => navigate("/home");
 
-        // サーバ側にログアウトリクエストを送信
-        fetch("http://localhost:8000/auth/logout", {
-            method: "POST",
-            credentials: "include",
-        })
-        .then((response) => {
+    const groupCount = groupList.length;
+
+    // グループ詳細画面へ遷移
+    const handleDetailGroup = async (groupId: number) => {
+        try {
+            const divisionName = "Default Division"; // 必要に応じて取得
+            const response = await fetch(`http://localhost:8000/group/${groupId}?division_name=${encodeURIComponent(divisionName)}`, {
+                method: "GET",
+            });
+
+            // エラーハンドリング
             if (!response.ok) {
-                throw new Error("ログアウトリクエストに失敗しました");
+                const errorDetail: ErrorDetail = await response.json();
+                console.error("グループ詳細取得失敗:", JSON.stringify(errorDetail, null, 2));
+                throw new Error(errorDetail.detail || "グループ詳細の取得に失敗しました");
             }
-            console.log("ログアウト成功");
-        })
-        .catch((error) => {
-            console.error("エラー発生:", error);
-        });
 
-        // ログインページにリダイレクト
-        navigate("/");
-    }
+            // データ取得
+            const data = await response.json();
+
+            // 結果を使って画面遷移
+            navigate("/search/run", {
+                state: {
+                    user_name,
+                    user_email,
+                    group_name: data.group.name || "未設定", // サーバーからのデータ
+                    files: data.group.files || [], // 空配列をデフォルト
+                },
+            });            
+        } catch (error) {
+            console.error("エラー発生:", error);
+            alert("グループ詳細の取得に失敗しました");
+        }
+    };
+
+    // グループ選択削除
 
     return (
         <div className="h-screen flex flex-col bg-white-500">
@@ -109,9 +103,7 @@ export default function Home() {
                     >
                         {isSidebarOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
                     </button>
-                    <span className="flex flex-row items-center text-2xl font-bold"> {/* flex-rowとitems-center、text-4xlを追加 */}
-                        <p>類似度判定システム</p>                     {/* pタグのクラス名を削除 */}
-                    </span>
+                    <span className="text-2xl font-bold">類似度判定システム</span>
                 </div>
                 {/* プロフィールボタン */}
                 <button
@@ -127,10 +119,7 @@ export default function Home() {
                             <p className="text-sm text-gray-500">{user_email}</p>
                         </div>
                         <ul className="p-2">
-                            <li 
-                            className="p-2 hover:bg-gray-100 rounded-md cursor-pointer"
-                            onClick={handleLogout}
-                            >ログアウト</li>
+                            <li className="p-2 hover:bg-gray-100 rounded-md cursor-pointer">ログアウト</li>
                         </ul>
                     </div>
                 )}
@@ -145,11 +134,12 @@ export default function Home() {
                     } transition-all duration-300 bg-blue-700 text-white flex flex-col justify-between`}
                 >
                     <div className="flex flex-col gap-4 mt-8">
-                        <nav className="flex flex-col">
+                    <nav className="flex flex-col">
                             <div
                                 className={`flex items-center gap-4 p-3 rounded-md cursor-pointer hover:bg-blue-500 ${
                                     isSidebarOpen ? "justify-start" : "justify-center"
                                 }`}
+                                onClick={handleHomeButtonClick}
                             >
                                 <FaHome size={24} />
                                 {isSidebarOpen && <span className="text-lg">ホーム</span>}
@@ -198,30 +188,55 @@ export default function Home() {
 
                 {/* メインコンテンツ */}
                 <main className="flex-1 flex flex-col p-8">
-                    <div className="flex justify-self-start">
-                        <h1 className="text-2xl font-bold text-blue-500">ホーム</h1>
+                    <div className="flex items-center gap-2">
+                        <h1 
+                        className="text-2xl cursor-pointer hover:text-blue-500"
+                        onClick={() => navigate("/home", { state: { user_name, user_email } })}
+                        >
+                            ホーム
+                        </h1>
+                        <IoIosArrowForward size={32} color="#3b81f6" /> 
+                        <h1 
+                            className="text-2xl font-bold text-blue-500"
+                        >
+                            サーチ
+                        </h1>
                     </div>
                     <div className="flex-1 flex justify-center items-center">
-                        <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-2xl p-8 flex justify-center items-center">
-                            <div className="flex gap-6 justify-center items-center">
-                                <button
-                                    onClick={handleGroupingButtonClick}
-                                    className="w-80 h-80 p-4 text-blue-500 bg-white rounded-lg border-8 border-blue-500 shadow-lg flex flex-col justify-center items-center hover:bg-blue-500 hover:text-white"
-                                >
-                                    <div className="flex flex-col items-center">
-                                        <span className="mb-2 block text-2xl font-bold">グルーピング</span>
-                                        <HiMiniRectangleGroup size={118} />
+                        <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-lg p-8">
+
+                            <div className="mt-4 flex bg-blue-500 justify-between items-center rounded-md p-2">
+                                <div className="flex items-center gap-2 ml-4">
+                                    <FaLayerGroup size={32} color="white" className="mr-4" />
+                                    <div className="text-white">
+                                        <p>既存グループ一覧</p>
                                     </div>
-                                </button>
-                                <button
-                                    onClick={() => navigate("/search/select")}
-                                    className="w-80 h-80 p-4 text-blue-500 bg-white rounded-lg border-8 border-blue-500 shadow-lg flex flex-col justify-center items-center hover:bg-blue-500 hover:text-white"
+                                </div>
+                            </div>
+
+                            <div 
+                                className="mt-4 overflow-y-auto"
+                                style={{
+                                    maxHeight: "560px",
+                                    paddingRight: "4px",
+                                }}
                                 >
-                                    <div className="flex flex-col items-center">
-                                        <span className="mb-2 block text-2xl font-bold">サーチ</span>
-                                        <IoSearchSharp size={118} />
+                                {groupList.map((group, index) => (
+                                    <div 
+                                        key={index}
+                                        className="mt-4 flex justify-between items-center p-2 rounded-md pointer hover:bg-gray-100"
+                                    >
+                                        <div 
+                                            className="flex items-center gap-2 cursor-pointer ml-4"
+                                            onClick={() => handleDetailGroup(group.id)}
+                                        >
+                                            <FaLayerGroup size={32} color="#3b81f6" className="mr-4" />
+                                            <div>
+                                                <p>{group.name}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </button>
+                                ))}
                             </div>
                         </div>
                     </div>

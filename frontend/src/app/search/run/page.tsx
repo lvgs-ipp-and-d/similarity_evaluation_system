@@ -1,16 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaHome, FaChevronDown, FaChevronRight } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaLayerGroup } from "react-icons/fa";
 import { FaFile } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 
-export default function GroupRun() {
+export default function SearchRun() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [expandedMenu, setExpandedMenu] = useState(null);
     // const [expandedSubMenu, setExpandedSubMenu] = useState(null);
@@ -19,8 +17,6 @@ export default function GroupRun() {
     const [isDeletePopupOpen, setIsDeletePopupOpen] = useState(false);
     const [fileToDeleteIndex, setFileToDeleteIndex] = useState<number | null>(null);
     const [groupList, setGroupList] = useState<{ id: number; name: string }[]>([]);
-    const [isGroupingComplete, setIsGroupingComplete] = useState(false); // グルーピング完了状態
-    const downloadButtonRef = useRef<HTMLButtonElement>(null);
     const location = useLocation();
     const { group_id = 0, group_name = "未設定" } = location.state || {};
     const [isLoading, setIsLoading] = useState(false);
@@ -58,7 +54,7 @@ export default function GroupRun() {
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
     const toggleSubMenu = (menu) => setExpandedMenu(expandedMenu === menu ? null : menu);
     const toggleProfileMenu = () => setIsProfileMenuOpen(!isProfileMenuOpen);
-    const handleHomeButtonClick = () => navigate("/home", {state: {user_name, user_email}});
+    const handleHomeButtonClick = () => navigate("/home");
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         if (event.target.files) {
             const files = Array.from(event.target.files);
@@ -83,81 +79,59 @@ export default function GroupRun() {
 
     const groupCount = groupList.length;
 
-    // グルーピング実行処理（エンドポイント：/group/process）
-    const handleGrouping = async (group_id: number, group_name: string) => {
+    // サーチ実行処理
+    const handleSearch = async (group_id: number, group_name: string) => {
         if (uploadedFiles.length === 0) {
             alert("ファイルを選択してください");
             return;
         }
-
+    
         const selectedGroup = {
             id: group_id,
             name: group_name,
             division: "Default Division",
         };
-
+    
         const formData = new FormData();
         uploadedFiles.forEach((file) => formData.append("files", file));
         formData.append("group_id", selectedGroup.id.toString());
         formData.append("group_name", selectedGroup.name);
         formData.append("division_name", selectedGroup.division);
-
+    
         try {
             setIsLoading(true);
-            const response = await fetch("http://localhost:8000/group/process", {
+            const response = await fetch("http://localhost:8000/search/process", {
                 method: "POST",
                 body: formData,
             });
-
-            if (!response.ok) {
-                const errorDetail = await response.json();
-                console.error("グルーピング実行失敗:", errorDetail);
-                throw new Error(errorDetail.detail || "グルーピングの実行に失敗しました");
-            }
-
-            const data = await response.json();
-            console.log("グルーピング結果:", data);
-            alert("グルーピングが完了しました");
-
-            setIsGroupingComplete(true); // グルーピング完了
-        } catch (error) {
-            console.error("エラー発生:", error);
-            alert("グルーピング中にエラーが発生しました");
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    // ダウンロード処理
-    const handleDownload = async (group_id: number) => {
-        try {
-            const response = await fetch(`http://localhost:8000/group/${group_id}/download`, {
-                method: "GET",
-            });
     
             if (!response.ok) {
                 const errorDetail = await response.json();
-                console.error("ダウンロード失敗:", errorDetail);
-                throw new Error(errorDetail.detail || "ダウンロードに失敗しました");
+                console.error("サーチ実行失敗:", errorDetail);
+                throw new Error(errorDetail.detail || "サーチの実行に失敗しました");
             }
     
-            // Blobとしてデータを処理
+            // ファイルのダウンロード処理
             const blob = await response.blob();
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = `group_${group_id}.json`;
+            a.download = "search_results.json";
             document.body.appendChild(a);
             a.click();
             a.remove();
-            window.URL.revokeObjectURL(url);
-            alert("ダウンロードが完了しました");
+            window.URL.revokeObjectURL(url); // メモリの解放
+    
+            alert("サーチが完了しました");
+
         } catch (error) {
             console.error("エラー発生:", error);
-            alert("ダウンロード中にエラーが発生しました");
+            alert("サーチ中にエラーが発生しました");
+        } finally {
+            setIsLoading(false);
         }
-    };    
-
+    };
+    
     return (
         <div className="h-screen flex flex-col bg-white-500">
             
@@ -166,10 +140,11 @@ export default function GroupRun() {
                 <div className="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center z-50">
                     <div className="flex flex-col items-center">
                         <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-                        <p className="text-white mt-4 text-lg font-semibold">グルーピング中...</p>
+                        <p className="text-white mt-4 text-lg font-semibold">サーチング...</p>
                     </div>
                 </div>
             )}
+
 
             {/* ヘッダー */}
             <header className="flex items-center justify-between bg-blue-500 text-white p-4 shadow-lg">
@@ -276,9 +251,12 @@ export default function GroupRun() {
                         <IoIosArrowForward size={32} color="#3b81f6" /> 
                         <h1 
                         className="text-2xl cursor-pointer hover:text-blue-500"
-                        onClick={() => navigate("/group/select", {state: {user_name, user_email}})}
+                        onClick={() => navigate(
+                            "/search/select", 
+                            {state: {user_name, user_email}}
+                        )}
                         >
-                            グルーピング
+                            サーチ
                         </h1>
                         <IoIosArrowForward size={32} color="#3b81f6" /> 
                         <h1 className="text-2xl font-bold text-blue-500">{group_name}</h1>
@@ -286,19 +264,6 @@ export default function GroupRun() {
                     <div className="flex-1 flex justify-center items-center">
                         <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-lg p-8">
                             <div className="flex gap-4 justify-self-end">
-                                <button
-                                    ref={downloadButtonRef}
-                                    className={`w-40 font-bold p-2 rounded-md flex items-center justify-center gap-2 ${
-                                    isGroupingComplete
-                                        ? "bg-green-500 text-white hover:bg-green-600"
-                                        : "bg-gray-400 text-gray-200 cursor-not-allowed"
-                                }`}
-                                disabled={!isGroupingComplete} // 無効化条件
-                                onClick={() => handleDownload(group_id)}
-                                >
-                                    <MdDownload />
-                                    ダウンロード
-                                </button>
                                 <label className="w-40 bg-gray-500 text-white font-bold p-2 rounded-md hover:bg-gray-600 cursor-pointer text-center">
                                     ファイルを選択
                                     <input
@@ -310,9 +275,9 @@ export default function GroupRun() {
                                 </label>
                                 <button 
                                     className="w-40 bg-orange-500 text-white font-bold p-2 rounded-md hover:bg-orange-600"
-                                    onClick={() => handleGrouping(group_id, group_name)}
+                                    onClick={() => handleSearch(group_id, group_name)}
                                 >
-                                    グルーピング実行
+                                    サーチ実行
                                 </button>
                             </div>
 

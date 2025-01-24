@@ -2,15 +2,20 @@
 
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaHome, FaChevronDown, FaChevronRight } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
+// import { HiUserGroup } from "react-icons/hi";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FaLayerGroup } from "react-icons/fa";
-import { FaFile } from "react-icons/fa";
+// import { FaFile } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+// import { IoIosArrowForward } from "react-icons/io";
 
-interface ErrorDetail {
-    detail?: string; // サーバーエラーのメッセージが格納されるプロパティ
+// タスクの型定義
+interface Task {
+    id: string; // タスクID
+    status: "PENDING" | "SUCCESS" | "FAILURE" | string; // ステータス
+    group_name: string; // グループ名
+    files: { filename: string; size: number }[]; // ファイル情報
 }
 
 export default function GroupEdit() {
@@ -21,6 +26,35 @@ export default function GroupEdit() {
     const location = useLocation();
     const { user_name = "未設定", user_email = "未設定" } = location.state || {};
     const navigate = useNavigate();
+    const [tasks, setTasks] = useState<Task[]>([]);
+    const [loading, setLoading] = useState(true);
+
+
+    // タスク一覧取得処理
+    const fetchTasks = async () => {
+        try {
+            const response = await fetch("http://localhost:8000/tasks");
+    
+            if (!response.ok) {
+                const errorDetail = await response.json();
+                console.error("サーバーエラー:", errorDetail.detail || "タスク一覧の取得に失敗しました");
+                throw new Error(errorDetail.detail || "タスク一覧の取得に失敗しました");
+            }
+    
+            const data = await response.json();
+            console.log("取得したタスク:", data.tasks); // ここでログを確認
+            setTasks(data.tasks);
+        } catch (error) {
+            console.error("タスク一覧取得エラー:", error);
+            setTasks([]);
+        } finally {
+            setLoading(false);
+        }
+    };    
+
+    useEffect(() => {
+        fetchTasks();
+    }, []);
 
     // グループリスト取得処理
     const fetchGroups = async () => {
@@ -54,70 +88,70 @@ export default function GroupEdit() {
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
     const toggleSubMenu = (menu) => setExpandedMenu(expandedMenu === menu ? null : menu);
     const toggleProfileMenu = () => setIsProfileMenuOpen(!isProfileMenuOpen);
-    const handleHomeButtonClick = () => navigate("/home");
+    const handleHomeButtonClick = () => navigate("/home", { state: { user_name, user_email } });
 
     const groupCount = groupList.length;
 
     // グループ削除処理
-    const confirmDeleteGroup = async (groupId: number) => {
-        if (!window.confirm("本当に削除しますか？")) {
-            return;
-        }
+    // const confirmDeleteGroup = async (groupId: number) => {
+    //     if (!window.confirm("本当に削除しますか？")) {
+    //         return;
+    //     }
     
-        console.log(`削除リクエスト送信: groupId=${groupId}`);
+    //     console.log(`削除リクエスト送信: groupId=${groupId}`);
     
-        try {
-            const response = await fetch(`http://localhost:8000/group/${groupId}`, {
-                method: "DELETE",
-            });
+    //     try {
+    //         const response = await fetch(`http://localhost:8000/group/${groupId}`, {
+    //             method: "DELETE",
+    //         });
     
-            if (!response.ok) {
-                const errorDetail = await response.json();
-                console.error("削除失敗:", errorDetail);
-                throw new Error("グループの削除に失敗しました");
-            }
+    //         if (!response.ok) {
+    //             const errorDetail = await response.json();
+    //             console.error("削除失敗:", errorDetail);
+    //             throw new Error("グループの削除に失敗しました");
+    //         }
     
-            // 削除成功時にグループリストを再取得
-            await fetchGroups();
-            alert("グループを削除しました");
-        } catch (error) {
-            console.error("エラー発生:", error);
-            alert("グループの削除に失敗しました");
-        }
-    };
+    //         // 削除成功時にグループリストを再取得
+    //         await fetchGroups();
+    //         alert("グループを削除しました");
+    //     } catch (error) {
+    //         console.error("エラー発生:", error);
+    //         alert("グループの削除に失敗しました");
+    //     }
+    // };
 
     // グループ詳細画面へ遷移
-    const handleDetailGroup = async (groupId: number) => {
-        try {
-            const divisionName = "Default Division"; // 必要に応じて取得
-            const response = await fetch(`http://localhost:8000/group/${groupId}?division_name=${encodeURIComponent(divisionName)}`, {
-                method: "GET",
-            });
+    // const handleDetailGroup = async (groupId: number) => {
+    //     try {
+    //         const divisionName = "Default Division"; // 必要に応じて取得
+    //         const response = await fetch(`http://localhost:8000/group/${groupId}?division_name=${encodeURIComponent(divisionName)}`, {
+    //             method: "GET",
+    //         });
 
-            // エラーハンドリング
-            if (!response.ok) {
-                const errorDetail: ErrorDetail = await response.json();
-                console.error("グループ詳細取得失敗:", JSON.stringify(errorDetail, null, 2));
-                throw new Error(errorDetail.detail || "グループ詳細の取得に失敗しました");
-            }
+    //         // エラーハンドリング
+    //         if (!response.ok) {
+    //             const errorDetail: ErrorDetail = await response.json();
+    //             console.error("グループ詳細取得失敗:", JSON.stringify(errorDetail, null, 2));
+    //             throw new Error(errorDetail.detail || "グループ詳細の取得に失敗しました");
+    //         }
 
-            // データ取得
-            const data = await response.json();
+    //         // データ取得
+    //         const data = await response.json();
 
-            // 結果を使って画面遷移
-            navigate("/group/detail", {
-                state: {
-                    user_name,
-                    user_email,
-                    group_name: data.group.name || "未設定", // サーバーからのデータ
-                    files: data.group.files || [], // 空配列をデフォルト
-                },
-            });            
-        } catch (error) {
-            console.error("エラー発生:", error);
-            alert("グループ詳細の取得に失敗しました");
-        }
-    };
+    //         // 結果を使って画面遷移
+    //         navigate("/group/detail", {
+    //             state: {
+    //                 user_name,
+    //                 user_email,
+    //                 group_name: data.group.name || "未設定", // サーバーからのデータ
+    //                 files: data.group.files || [], // 空配列をデフォルト
+    //             },
+    //         });            
+    //     } catch (error) {
+    //         console.error("エラー発生:", error);
+    //         alert("グループ詳細の取得に失敗しました");
+    //     }
+    // };
 
     // グループ選択削除
 
@@ -181,7 +215,7 @@ export default function GroupEdit() {
                                         isSidebarOpen ? "justify-start" : "justify-center"
                                     }`}
                                 >
-                                    <HiUserGroup size={24} />
+                                    <FaLayerGroup size={24} />
                                     {!isSidebarOpen && (
                                         <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full transform translate-x-2 -translate-y-2">
                                             {groupCount}
@@ -218,70 +252,74 @@ export default function GroupEdit() {
 
                 {/* メインコンテンツ */}
                 <main className="flex-1 flex flex-col p-8">
-                    <div className="flex items-center gap-2">
-                        <h1 
-                        className="text-2xl cursor-pointer hover:text-blue-500"
-                        onClick={() => navigate("/home", { state: { user_name, user_email } })}
-                        >
-                            ホーム
-                        </h1>
-                        <IoIosArrowForward size={32} color="#3b81f6" /> 
-                        <h1 
-                        className="text-2xl cursor-pointer hover:text-blue-500"
-                        onClick={() => navigate("/group/select", { state: { user_name, user_email } })}
-                        >
-                            グルーピング
-                        </h1>
-                        <IoIosArrowForward size={32} color="#3b81f6" /> 
-                        <h1 className="text-2xl font-bold text-blue-500">既存グループ編集</h1>
+                    <div className="flex justify-self-start">
+                        <h1 className="text-2xl cursor-pointer hover:text-blue-500">ホーム</h1>
+                        <IoIosArrowForward size={32} color="#3b81f6" />
+                        <h1 className="text-2xl cursor-pointer hover:text-blue-500">グルーピング</h1>
+                        <IoIosArrowForward size={32} color="#3b81f6" />
+                        <h1 className="text-2xl font-bold text-blue-500">実行済グループ</h1>
                     </div>
-                    <div className="flex-1 flex justify-center items-center">
-                        <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-lg p-8">
-
-                            <div className="mt-4 flex bg-blue-500 justify-between items-center rounded-md p-2">
-                                <div className="flex items-center gap-2 ml-4">
-                                    <FaLayerGroup size={32} color="white" />
-                                    <div className="text-white">
-                                        <p>グループ一覧</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div 
-                                className="mt-4 overflow-y-auto"
-                                style={{
-                                    maxHeight: "560px",
-                                    paddingRight: "4px",
-                                }}
-                                >
-                                {groupList.map((group, index) => (
-                                    <div 
-                                        key={index}
-                                        className="mt-4 flex justify-between items-center bg-gray-100 p-2 rounded-md pointer hover:bg-gray-200"
-                                    >
-                                        <div 
-                                            className="flex items-center gap-2 cursor-pointer ml-4"
-                                            onClick={() => handleDetailGroup(group.id)}
-                                        >
-                                            <FaFile size={32} color="#3b81f6" />
-                                            <div>
-                                                <p>{group.name}</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <button
-                                                onClick={() => confirmDeleteGroup(group.id)}
-                                                className="w-16 bg-red-500 text-white font-bold p-2 rounded-md hover:bg-red-600 mr-4"
+                    <div className="flex-1 flex justify-center items-center mt-8">
+                        <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-2xl p-8 overflow-y-auto">
+                            {loading ? (
+                                <p className="text-blue-500 text-lg">タスクを取得中...</p>
+                            ) : tasks.length === 0 ? (
+                                <p className="text-gray-600 text-lg">現在、処理が完了したタスクはありません。</p>
+                            ) : (
+                                <table className="table-auto w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                                    <thead>
+                                        <tr className="bg-blue-500 text-white">
+                                            <th className="border px-4 py-2 text-left first:rounded-tl-lg last:rounded-tr-lg">グループ名</th>
+                                            <th className="border px-4 py-2 text-left">タスクID</th>
+                                            <th className="border px-4 py-2 text-left">ファイル名</th>
+                                            <th className="border px-4 py-2 text-left">ファイルサイズ（bytes）</th>
+                                            <th className="border px-4 py-2 text-left">削除</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="text-gray-800">
+                                        {tasks.map((task, index) => (
+                                            <tr
+                                                key={task.id}
+                                                className={index % 2 === 0 ? "bg-blue-100" : ""}
                                             >
-                                                削除
-                                            </button>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
+                                                <td className="border px-4 py-2">{task.group_name || "未設定"}</td>
+                                                <td className="border px-4 py-2">{task.id}</td>
+                                                <td className="border px-4 py-2">
+                                                    {task.files?.length > 0 ? (
+                                                        task.files.map((file, idx) => (
+                                                            <div key={idx}>
+                                                                {file.filename ? `${file.filename}` : "ファイル名なし"}
+                                                            </div>
+                                                        ))
+                                                    ) : (
+                                                        <div>ファイル情報なし</div>
+                                                    )}
+                                                </td>
+                                                <td className="border px-4 py-2">
+                                                    {task.files?.length > 0 ? (
+                                                        task.files.map((file, idx) => (
+                                                            <div key={idx}>
+                                                                {file.size ? `${file.size}` : "サイズ情報なし"}
+                                                            </div>
+                                                        ))
+                                                    ) : (
+                                                        <div>サイズ情報なし</div>
+                                                    )}
+                                                </td>
+                                                <td className="border px-4 py-2 text-center">
+                                                <label className="font-bold cursor-pointer text-red-500 hover:text-red-700">
+                                                    削除
+                                                </label>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            )}
                         </div>
                     </div>
                 </main>
+
             </div>
         </div>
     );

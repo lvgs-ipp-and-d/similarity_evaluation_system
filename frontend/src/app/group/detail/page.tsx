@@ -29,7 +29,7 @@ export default function GroupDetail() {
 
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
     const toggleProfileMenu = () => setIsProfileMenuOpen(!isProfileMenuOpen);
-    const handleHomeButtonClick = () => navigate("/home");
+    const handleHomeButtonClick = () => navigate("/home", { state: { user_name, user_email } });
 
     // デバッグ用ログ
     console.log("遷移後のlocation.state:", location.state);
@@ -86,9 +86,9 @@ export default function GroupDetail() {
                         <IoIosArrowForward size={32} color="#3b81f6" /> 
                         <h1 
                         className="text-2xl cursor-pointer hover:text-blue-500"
-                        onClick={() => navigate("/edit", { state: { user_name, user_email } })}
+                        onClick={() => navigate("/group/edit", { state: { user_name, user_email } })}
                         >
-                            既存グループ編集
+                            既存グループ一覧
                         </h1>
                         <IoIosArrowForward size={32} color="#3b81f6" />
                         <h1 className="text-2xl font-bold text-blue-500">{group_name}</h1>
@@ -105,7 +105,7 @@ export default function GroupDetail() {
                             <div className="mt-4 flex bg-blue-500 justify-between items-center rounded-md p-2">
                                 {/* グループ名 */}
                                 <div className="flex items-center gap-2 ml-4">
-                                    <FaLayerGroup size={32} color="white" />
+                                    <FaLayerGroup size={32} color="white" className="mr-4" />
                                     <div className="text-white">
                                         <p>グループ名：{group_name}</p>
                                     </div>
@@ -119,9 +119,12 @@ export default function GroupDetail() {
                             <div className="mt-4 overflow-y-auto" style={{ maxHeight: "560px", paddingRight: "4px" }}>
                                 {files.length > 0 ? (
                                     files.map((file: File) => (
-                                        <div key={file.file_id} className="mt-4 flex justify-between items-center bg-gray-100 p-2 rounded-md">
+                                        <div 
+                                            key={file.file_id} 
+                                            className="mt-4 flex justify-between items-center p-2 rounded-md"
+                                        >
                                             <div className="flex items-center gap-2 ml-4">
-                                                <FaFile size={32} color="#3b81f6" />
+                                                <FaFile size={32} color="#3b81f6" className="mr-4" />
                                                 <div>
                                                     <p> {file.file_name}</p>
                                                     <p className="text-sm text-gray-500">

@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes, FaHome, FaChevronDown, FaChevronRight, FaLayerGroup } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
 import { useNavigate, useLocation } from "react-router-dom";
-import { IoMdAddCircle } from "react-icons/io";
+// import { IoMdAddCircle } from "react-icons/io";
 import { IoListCircleSharp } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import { RiProgress5Fill } from "react-icons/ri";
 
 export default function GroupSelect() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -25,13 +25,13 @@ export default function GroupSelect() {
     const toggleSubMenu = (menu) => setExpandedMenu(expandedMenu === menu ? null : menu);
     const toggleChildMenu = (subMenu) => setExpandedSubMenu(expandedSubMenu === subMenu ? null : subMenu);
     const toggleProfileMenu = () => setIsProfileMenuOpen(!isProfileMenuOpen);
-    const openPopup = () => setIsPopupOpen(true);
+    // const openPopup = () => setIsPopupOpen(true);
     const closePopup = () => setIsPopupOpen(false);
     const handleInputChange = (e) => setGroupName(e.target.value);
 
-    const handleHomeButtonClick = () => navigate("/home");
+    const handleHomeButtonClick = () => navigate("/home", { state: { user_name, user_email } });
 
-    const handleNewGroupButtonClick = () => openPopup();
+    // const handleNewGroupButtonClick = () => openPopup();
 
     // グループ作成処理
     const handleCreateGroup = async (groupName: string) => {
@@ -64,7 +64,7 @@ export default function GroupSelect() {
             const { group_id } = data;
 
             // 登録成成功時に/runにリダイレクト
-            navigate("/run", {
+            navigate("/group/run", {
                 state: { 
                     user_name: user_name,
                     user_email: user_email,
@@ -106,7 +106,7 @@ export default function GroupSelect() {
         fetchGroups();
     }, []);
 
-    const handleExistingGroupButtonClick = () => navigate("/edit", { state: { user_name, user_email } });
+    const handleExistingGroupButtonClick = () => navigate("/group/edit", { state: { user_name, user_email } });
 
     const groupCount = groupList.length;
 
@@ -172,7 +172,7 @@ export default function GroupSelect() {
                                         isSidebarOpen ? "justify-start" : "justify-center"
                                     }`}
                                 >
-                                    <HiUserGroup size={24} />
+                                    <FaLayerGroup size={24} />
                                     {!isSidebarOpen && (
                                         <span className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full transform translate-x-2 -translate-y-2">
                                             {groupCount}
@@ -222,18 +222,25 @@ export default function GroupSelect() {
                     <div className="flex-1 flex justify-center items-center">
                         <div className="w-[90%] h-[90%] bg-white rounded-lg shadow-2xl p-8 flex justify-center items-center">
                             <div className="flex gap-6 justify-center items-center">
-                                <button
+                                {/* <button
                                     onClick={handleNewGroupButtonClick}
                                     className="w-80 h-80 p-4 text-blue-500 bg-white rounded-lg border-8 border-blue-500 shadow-lg flex flex-col justify-center items-center hover:bg-blue-500 hover:text-white"
                                 >
                                     <span className="mb-2 block text-2xl font-bold">新規グループ作成</span>
                                     <IoMdAddCircle size={118} />
+                                </button> */}
+                                <button
+                                    onClick={() => navigate("/group/processing", { state: { user_name, user_email } })}
+                                    className="w-80 h-80 p-4 text-blue-500 bg-white rounded-lg border-8 border-blue-500 shadow-lg flex flex-col justify-center items-center hover:bg-blue-500 hover:text-white"
+                                >
+                                    <span className="mb-2 block text-2xl font-bold">実行中グループ</span>
+                                    <RiProgress5Fill size={118} />
                                 </button>
                                 <button
                                     onClick={handleExistingGroupButtonClick}
                                     className="w-80 h-80 p-4 text-blue-500 bg-white rounded-lg border-8 border-blue-500 shadow-lg flex flex-col justify-center items-center hover:bg-blue-500 hover:text-white"
                                 >
-                                    <span className="mb-2 block text-2xl font-bold">既存グループ編集</span>
+                                    <span className="mb-2 block text-2xl font-bold">実行済グループ</span>
                                     <IoListCircleSharp size={118} />
                                 </button>
                             </div>
@@ -246,7 +253,7 @@ export default function GroupSelect() {
             {isPopupOpen && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
                     <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-                        <h2 className="text-xl font-bold mb-4 text-center">新しいグループ名を入力</h2>
+                        <h2 className="text-xl font-bold mb-4 text-center">新規グループ名を入力</h2>
                         <input
                             type="text"
                             value={groupName}
